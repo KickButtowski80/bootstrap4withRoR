@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+   
+</head>
+<body>
+<%= yield %>
+<%= render 'layouts/navbar'   %>
+<%= render 'layouts/carousel' %>
+<%= render 'layouts/whatwedo' %>
+<%= render 'layouts/about'    %>
+<%= render 'layouts/news'     %>
+<%= render 'layouts/footer'  %>
+
+ <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  
+</body>
+</html>
